@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #2e2e2e;
+    --secondary-color: #f2903a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+/* nav */
+nav {
+    top: 0;
+    position: sticky;
+    background-color: var(--primary-color);
+    padding: 0.2rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+}
+
+/* welcome section */
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url("/images/welcome-section.jpg") center center/cover;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5rem;
+    color: var(--secondary-color);
+}
+
+/* projects section */
+.middle {
+    background: #b9bcbd;
+    height: 100vh;
+}
+
+#projects {
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.project-tile {
+    -webkit-box-shadow: 4px 4px 11px -2px #000000; 
+    box-shadow: 4px 4px 11px -2px #000000;
+}
+
+#projects .project-tile-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+
+#projects img {
+    max-width: 100%;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    color: #000;
+}
+
+/* profile link */
+#profile-link {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+#profile-link a {
+    color: white;
+}
+
+#profile-link h1 {
+    margin: 0;
+    font-size: 4rem;
+    align-self: center;
+}
+
+#profile-link span {
+    color: white;
+}
+
