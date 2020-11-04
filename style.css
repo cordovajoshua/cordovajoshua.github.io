@@ -127,3 +127,57 @@ nav ul li {
     color: white;
 }
 
+/* media queries */
+@media(max-width: 700px) {
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    #welcome-section {
+        height: 50vh;
+    }
+
+    #welcome-section h1 {
+        font-size: 3rem;
+    }
+    
+    #welcome-section p {
+        font-size: 1.3rem;
+    }
+
+    .middle {
+        height: auto;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    #projects {
+        width: 90%;
+        margin: auto;
+        padding-top: 1.5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #welcome-section {
+        height: 50vh;
+    }
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+    #welcome-section p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    #projects h2 {
+        font-size: 1.5rem;
+    }
+    #projects .project-tile-wrapper {
+        grid-template-columns: 1fr;
+}
