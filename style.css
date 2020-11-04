@@ -70,13 +70,13 @@ nav ul li {
 /* projects section */
 .middle {
     background: #b9bcbd;
-    height: 100vh;
+    height: auto;
 }
 
 #projects {
     width: 80%;
     margin: auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
@@ -161,10 +161,6 @@ nav ul li {
 }
 
 @media(max-width: 500px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
     #welcome-section {
         height: 50vh;
     }
